@@ -1,0 +1,53 @@
+{
+  "id": "integerDisplayWidget",
+  "name": "Integer Display Widget",
+  "description": "Displays an integer fetched from an HTTP API",
+  "version": "1.0.0",
+  "vendor": "YourCompany",
+  "license": "MIT",
+  "contribution": {
+    "type": "Story",
+    "id": "integerDisplayWidgetContribution",
+    "widgets": [
+      {
+        "id": "integerDisplayWidget",
+        "name": "Integer Display",
+        "description": "Shows an integer from an API",
+        "icon": "sap-icon://number-sign",
+        "webcomponents": [
+          {
+            "kind": "main",
+            "tag": "integer-display-widget",
+            "url": "integerDisplayWidget.js",
+            "integrity": "",
+            "attributes": [
+              {
+                "name": "apiUrl",
+                "type": "string",
+                "description": "The API endpoint to fetch the integer from"
+              },
+              {
+                "name": "refreshInterval",
+                "type": "integer",
+                "description": "Refresh interval in seconds"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "apiUrl": {
+      "type": "string",
+      "default": "https://api.eu.signavio.cloud.sap/pi/signal/odata/v1/P2F_T1"
+    },
+    "refreshInterval": {
+      "type": "integer",
+      "default": 60
+    }
+  },
+  "features": {
+    "require": ["fetch"]
+  }
+}
