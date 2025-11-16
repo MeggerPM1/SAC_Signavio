@@ -40,7 +40,7 @@
   "properties": {
     "apiUrl": {
       "type": "string",
-      "default": "https://api.eu.signavio.cloud.sap/pi/signal/odata/v1/P2F_T1"
+      "default": "https://XXXX"
     },
     "refreshInterval": {
       "type": "integer",
@@ -51,3 +51,4 @@
     "require": ["fetch"]
   }
 }
+
