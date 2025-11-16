@@ -12,7 +12,7 @@
             this.fetchData();
         },
         fetchData: function() {
-            fetch("https://api.eu.signavio.cloud.sap/pi/signal/odata/v1/P2F_T1")
+            fetch("https://ZZZZ")
                 .then(response => response.json())
                 .then(data => {
                     const value = data.integer; // Adjust based on API response
@@ -27,4 +27,5 @@
 
     // Register widget
     window.sap.custom.widgets.register(widget);
+
 })();
